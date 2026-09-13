@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Orbitron', sans-serif;
+    --font-tech: 'Space Grotesk', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    background-color: #030712;
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-tech {
+    font-family: var(--font-tech);
+  }
+}
+
+/* Custom glowing effects and cosmic accents */
+.text-glow-gold {
+  text-shadow: 0 0 20px rgba(251, 191, 36, 0.45), 0 0 40px rgba(245, 158, 11, 0.2);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.45), 0 0 40px rgba(14, 165, 233, 0.2);
+}
+
+.box-glow-gold {
+  box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.25);
+}
+
+.box-glow-cyan {
+  box-shadow: 0 0 35px -5px rgba(56, 189, 248, 0.25);
+}
+
+.cosmic-radial-hero {
+  background: radial-gradient(circle at 50% 10%, rgba(30, 58, 138, 0.25) 0%, rgba(15, 23, 42, 0.6) 40%, rgba(3, 7, 18, 0.95) 80%);
+}
+
+.cosmic-grid {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
